@@ -1,0 +1,118 @@
+body
+{
+	font-family: 'aviar_dreamsregular', arial, impact, serif;
+  background: url("images/img3.png");
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  font-size: 1em;
+}
+
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    #lisere
+    {
+      display:none;
+    }
+
+    #contenu_cv
+    {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    #ma_formation p
+    {
+      margin-left: 20px;
+    }
+}
+
+@font-face /*police utilisée*/
+{
+    font-family: 'caviar_dreamsregular';
+    src: url('police/CaviarDreams-webfont.eot');
+    src: url('police/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/CaviarDreams-webfont.woff2') format('woff2'),
+         url('police/CaviarDreams-webfont.woff') format('woff'),
+         url('police/CaviarDreams-webfont.ttf') format('truetype'),
+         url('police/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p
+{
+	margin-left: 1%;
+}
+
+header
+{
+	padding-bottom: 30px;
+	padding-top: 30px;
+  text-align: center;
+  width: 100%;
+  display: :flex;
+}
+
+#lisere img
+{
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+  margin: 10px 10px;
+}
+
+
+h2
+{
+  text-align: center;
+	color: #5F6161;
+}
+
+#lisere
+{
+  background: url("images/img2.png");
+  height: 800px;
+  border-radius: 6px;
+}
+
+#contenu_general
+{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#contenu_cv
+{
+  align-items: baseline;
+  display: flex;
+  width: 100%;
+  text-align: justify;
+}
+
+#mon_experience
+{
+  flex-grow: 1;
+  width: 100%;
+}
+
+#mes_competences
+{
+  flex-grow: 2;
+  width: 100%;
+}
+
+#ma_formation
+{
+  flex-grow: 1;
+  width: 100%;
+  padding-right: 5px;
+}
+
